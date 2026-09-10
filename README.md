@@ -253,6 +253,22 @@ All routes render inside the shared `Layout`, which provides the sidebar, header
 
 ---
 
+## Screenshots
+
+| Landing | Upload |
+|:-------:|:------:|
+| ![Landing](screenshots/landing.png) | ![Upload](screenshots/upload.png) |
+
+| Datasets | Profiling |
+|:--------:|:---------:|
+| ![Datasets](screenshots/datasets.png) | ![Profiling](screenshots/profiling.png) |
+
+| DataPilot AI (Copilot) | Settings |
+|:---------------------:|:--------:|
+| ![Copilot](screenshots/copilot.png) | ![Settings](screenshots/settings.png) |
+
+---
+
 ## Design System
 
 Material Design 3–inspired token system defined in `src/index.css` via Tailwind v4 `@theme inline`:
