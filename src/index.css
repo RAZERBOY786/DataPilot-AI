@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-surface: var(--c-surface);
+  --color-surface-canvas: var(--c-surface-canvas);
+  --color-surface-subtle: var(--c-surface-subtle);
+  --color-surface-card: var(--c-surface-card);
+  --color-surface-container: var(--c-surface-container);
+  --color-surface-container-low: var(--c-surface-container-low);
+  --color-surface-container-high: var(--c-surface-container-high);
+  --color-surface-container-highest: var(--c-surface-container-highest);
+  --color-surface-variant: var(--c-surface-variant);
+
+  --color-primary: var(--c-primary);
+  --color-primary-container: var(--c-primary-container);
+  --color-on-primary: var(--c-on-primary);
+  --color-on-primary-container: var(--c-on-primary-container);
+  --color-primary-fixed: var(--c-primary-fixed);
+  --color-on-primary-fixed: var(--c-on-primary-fixed);
+
+  --color-secondary: var(--c-secondary);
+  --color-secondary-container: var(--c-secondary-container);
+  --color-on-secondary: var(--c-on-secondary);
+  --color-secondary-fixed: var(--c-secondary-fixed);
+  --color-secondary-fixed-dim: var(--c-secondary-fixed-dim);
+  --color-on-secondary-fixed: var(--c-on-secondary-fixed);
+
+  --color-tertiary: var(--c-tertiary);
+  --color-tertiary-container: var(--c-tertiary-container);
+  --color-on-tertiary: var(--c-on-tertiary);
+  --color-tertiary-fixed: var(--c-tertiary-fixed);
+  --color-tertiary-fixed-dim: var(--c-tertiary-fixed-dim);
+  --color-on-tertiary-fixed: var(--c-on-tertiary-fixed);
+
+  --color-on-surface: var(--c-on-surface);
+  --color-on-surface-variant: var(--c-on-surface-variant);
+
+  --color-border-subtle: var(--c-border-subtle);
+  --color-border-focus: var(--c-border-focus);
+
+  --color-status-success: var(--c-status-success);
+  --color-status-warning: var(--c-status-warning);
+  --color-status-error: var(--c-status-error);
+
+  --color-error: var(--c-error);
+  --color-on-error: var(--c-on-error);
+  --color-error-container: var(--c-error-container);
+  --color-on-error-container: var(--c-on-error-container);
+
+  --color-sidebar-bg: var(--c-sidebar-bg);
+  --color-sidebar-active: var(--c-sidebar-active);
+
+  --color-inverse-surface: var(--c-inverse-surface);
+  --color-inverse-on-surface: var(--c-inverse-on-surface);
+  --color-inverse-primary: var(--c-inverse-primary);
+
+  --color-outline: var(--c-outline);
+  --color-outline-variant: var(--c-outline-variant);
+
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  --font-headline: 'Plus Jakarta Sans', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'Inter', monospace;
+}
+
+:root {
+  --c-surface: #f8f9ff;
+  --c-surface-canvas: #F8FAFC;
+  --c-surface-subtle: #F1F5F9;
+  --c-surface-card: #FFFFFF;
+  --c-surface-container: #e5eeff;
+  --c-surface-container-low: #eff4ff;
+  --c-surface-container-high: #dce9ff;
+  --c-surface-container-highest: #d3e4fe;
+  --c-surface-variant: #d3e4fe;
+
+  --c-primary: #00288e;
+  --c-primary-container: #1E40AF;
+  --c-on-primary: #ffffff;
+  --c-on-primary-container: #a8b8ff;
+  --c-primary-fixed: #dde1ff;
+  --c-on-primary-fixed: #001453;
+
+  --c-secondary: #0058be;
+  --c-secondary-container: #2170e4;
+  --c-on-secondary: #ffffff;
+  --c-secondary-fixed: #d8e2ff;
+  --c-secondary-fixed-dim: #adc6ff;
+  --c-on-secondary-fixed: #001a42;
+
+  --c-tertiary: #2d3449;
+  --c-tertiary-container: #434b60;
+  --c-on-tertiary: #ffffff;
+  --c-tertiary-fixed: #dae2fd;
+  --c-tertiary-fixed-dim: #bec6e0;
+  --c-on-tertiary-fixed: #131b2e;
+
+  --c-on-surface: #0b1c30;
+  --c-on-surface-variant: #444653;
+
+  --c-border-subtle: #E2E8F0;
+  --c-border-focus: #3B82F6;
+
+  --c-status-success: #10B981;
+  --c-status-warning: #F59E0B;
+  --c-status-error: #EF4444;
+
+  --c-error: #ba1a1a;
+  --c-on-error: #ffffff;
+  --c-error-container: #ffdad6;
+  --c-on-error-container: #93000a;
+
+  --c-sidebar-bg: #0B132B;
+  --c-sidebar-active: #1E40AF;
+
+  --c-inverse-surface: #213145;
+  --c-inverse-on-surface: #eaf1ff;
+  --c-inverse-primary: #b8c4ff;
+
+  --c-outline: #757684;
+  --c-outline-variant: #c4c5d5;
+}
+
+.dark {
+  --c-surface: #0d1425;
+  --c-surface-canvas: #0a0f1e;
+  --c-surface-subtle: #16203a;
+  --c-surface-card: #111a30;
+  --c-surface-container: #1c2946;
+  --c-surface-container-low: #182344;
+  --c-surface-container-high: #24324f;
+  --c-surface-container-highest: #2a3a5c;
+  --c-surface-variant: #33415f;
+
+  --c-primary: #b8c4ff;
+  --c-primary-container: #3b5cd6;
+  --c-on-primary: #0b132b;
+  --c-on-primary-container: #e2e8ff;
+  --c-primary-fixed: #dde1ff;
+  --c-on-primary-fixed: #223a8f;
+
+  --c-secondary: #7cb6ff;
+  --c-secondary-container: #2f6bdd;
+  --c-on-secondary: #08224a;
+  --c-secondary-fixed: #d8e2ff;
+  --c-secondary-fixed-dim: #adc6ff;
+  --c-on-secondary-fixed: #001a42;
+
+  --c-tertiary: #c5cdea;
+  --c-tertiary-container: #3a4564;
+  --c-on-tertiary: #0f1626;
+  --c-tertiary-fixed: #dae2fd;
+  --c-tertiary-fixed-dim: #bec6e0;
+  --c-on-tertiary-fixed: #0d1526;
+
+  --c-on-surface: #e6ecff;
+  --c-on-surface-variant: #a9b3cc;
+
+  --c-border-subtle: #24304d;
+  --c-border-focus: #6d9bff;
+
+  --c-status-success: #34d399;
+  --c-status-warning: #fbbf24;
+  --c-status-error: #f87171;
+
+  --c-error: #ffb4ab;
+  --c-on-error: #690005;
+  --c-error-container: #93000a;
+  --c-on-error-container: #ffdad6;
+
+  --c-sidebar-bg: #070d1a;
+  --c-sidebar-active: #2f50c8;
+
+  --c-inverse-surface: #e6ecff;
+  --c-inverse-on-surface: #1a2233;
+  --c-inverse-primary: #3d62ff;
+
+  --c-outline: #9aa3b8;
+  --c-outline-variant: #4a556e;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  background: var(--color-surface-canvas);
+  color: var(--color-on-surface);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}

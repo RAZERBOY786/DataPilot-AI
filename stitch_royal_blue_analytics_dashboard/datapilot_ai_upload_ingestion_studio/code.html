@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "on-secondary-fixed": "#001a42", "tertiary-fixed": "#dae2fd", "status-success": "#10B981", "surface-container-low": "#eff4ff", "error-container": "#ffdad6", "on-surface-variant": "#444653", "surface-container-highest": "#d3e4fe", "primary-container": "#1e40af", "surface-variant": "#d3e4fe", "secondary-fixed": "#d8e2ff", "surface-canvas": "#F8FAFC", "tertiary-container": "#434b60", "on-primary-fixed": "#001453", "on-primary-fixed-variant": "#173bab", "secondary": "#0058be", "inverse-primary": "#b8c4ff", "on-primary": "#ffffff", "tertiary": "#2d3449", "surface-subtle": "#F1F5F9", "error": "#ba1a1a", "secondary-fixed-dim": "#adc6ff", "surface-bright": "#f8f9ff", "on-secondary": "#ffffff", "border-focus": "#3B82F6", "sidebar-active": "#1E40AF", "surface-container": "#e5eeff", "background": "#f8f9ff", "border-subtle": "#E2E8F0", "on-error-container": "#93000a", "on-secondary-container": "#fefcff", "surface": "#f8f9ff", "on-primary-container": "#a8b8ff", "secondary-container": "#2170e4", "status-warning": "#F59E0B", "surface-card": "#FFFFFF", "tertiary-fixed-dim": "#bec6e0", "surface-container-lowest": "#ffffff", "surface-container-high": "#dce9ff", "on-secondary-fixed-variant": "#004395", "on-surface": "#0b1c30", "outline": "#757684", "primary-fixed-dim": "#b8c4ff", "status-error": "#EF4444", "surface-dim": "#cbdbf5", "inverse-surface": "#213145", "primary": "#00288e", "on-tertiary-fixed": "#131b2e", "sidebar-bg": "#0B132B", "surface-tint": "#3755c3", "on-tertiary-fixed-variant": "#3f465c", "on-tertiary-container": "#b4bbd5", "on-background": "#0b1c30", "outline-variant": "#c4c5d5", "primary-fixed": "#dde1ff", "on-tertiary": "#ffffff", "inverse-on-surface": "#eaf1ff", "accent-glow": "rgba(59, 130, 246, 0.15)" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-md": "1rem", "gutter-xs": "0.25rem", "gutter-lg": "1.5rem", "gutter-sm": "0.5rem", "sidebar-width": "260px", "sidebar-collapsed": "72px", "card-pad-sm": "1rem", "gutter-2xl": "3rem", "topbar-height": "64px", "gutter-xl": "2rem", "card-pad-lg": "2rem", "card-pad-md": "1.5rem" }, "fontFamily": { "headline-xl": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "code-metric": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "kicker": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "headline-xl": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "16px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "code-metric": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "kicker": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "display-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-canvas text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[260px] bg-surface-card shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 flex items-center px-gutter-lg gap-gutter-sm"><img alt="DataPilot AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UoiZlG-hYeemHLFqrp2r7j5MHMtRGRJ9kgRfJUWzdDBe-dE2IgGpRX7uK-3qwR5w0uPjds7r7H5Xnxus6HyzC-THpr2NrhGUE9bAwJN2nwD3OUOKH-zYpaybACxkzNYXR9F6UgFtNYFnuneuVBDLkyK_n3aP6tiZhLKsapUylLqPDBOEXVE6-fSLh8PEh8PPFBgbJoMunr7GQ3FUms6RoXMHVjrACwpuqgADuu4cTSRzodzo7DvkJo4LA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">DataPilot</span><span class="font-kicker text-kicker uppercase text-secondary font-bold tracking-wider">Enterprise AI</span></div></div><div class="px-gutter-lg py-gutter-sm"><div class="flex items-center justify-between px-3 py-2 rounded-lg bg-surface-subtle text-on-surface-variant"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-status-success"></span><span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface">Cluster Live</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">US-East</span></div></div><nav class="flex flex-col gap-1 px-gutter-sm mt-2" data-active-classes="bg-primary text-on-primary font-headline-sm shadow-[0_0_16px_rgba(59,130,246,0.2)]"><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="upload-data" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">cloud_upload</span><span class="font-label-md text-label-md">Upload Data</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="datasets" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">dataset</span><span class="font-label-md text-label-md">Datasets</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">14</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="data-profile" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-md text-label-md">Data Profile</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="data-cleaning" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">auto_fix_high</span><span class="font-label-md text-label-md">Data Cleaning</span></div><span class="flex items-center justify-center w-5 h-5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-bold">3</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="eda-insights" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-md text-label-md">EDA &amp; Insights</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="ai-assistant" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] text-secondary">auto_awesome</span><span class="font-label-md text-label-md">AI Assistant</span></div><span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase font-bold tracking-tight">Gemini</span></a></nav></div><div class="p-gutter-md"><div class="p-3 rounded-xl bg-surface-subtle flex flex-col gap-2"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Storage Quota</span><span class="font-label-sm text-label-sm text-primary font-bold">72%</span></div><div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden"><div class="h-full bg-primary w-[72%]"></div></div><span class="font-body-sm text-body-sm text-on-surface-variant">36.2 GB of 50 GB used</span></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-card/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex items-center gap-gutter-md flex-1"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-primary max-w-md"><span class="material-symbols-outlined text-[18px] text-secondary">table_view</span><span class="font-label-md text-label-md truncate font-semibold">ecommerce_customer_churn_q3.csv</span><span class="font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">(42.8 MB • 128,450 rows)</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant cursor-pointer">arrow_drop_down</span></div><div class="relative flex-1 max-w-sm"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-4 rounded-lg bg-surface-subtle font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-card focus:shadow-[0_0_0_2px_rgba(59,130,246,0.3)] transition-all" placeholder="Search columns, anomalies, metrics..." type="text"/></div></div><div class="flex items-center gap-gutter-md"><div class="hidden xl:flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span><span class="font-label-sm text-label-sm font-semibold text-primary">Gemini AI Engine: Active</span><span class="font-label-sm text-label-sm text-on-surface-variant">• Latency 140ms</span></div><div class="flex items-center gap-1"><button aria-label="Theme Toggle" class="w-9 h-9 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">light_mode</span></button><button aria-label="Notifications" class="relative w-9 h-9 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full ring-2 ring-surface-card"></span></button></div><div class="h-6 w-[1px] bg-border-subtle"></div><div class="flex items-center gap-3"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_0_1px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1icbk4F1zbsN0buZSWPCFdvPM1VE8gJ23mbbj7yqFrTgR1NOKodfiRb9czkOWIHzx3pKTtorE4uLEnMS9nLeSgyG8jgU2NB6cCAQOlFdKYucPztA9ETJcy2CNd_tdeJO_svQZShBpKXMVsiukmcG79Vbbm3APvGYpvnoCG-XjsB3ULUACpAhT8Z-h_zua_yBkNomuW03RWI_6N0LseVgl_kuONTdtfnQXkQC7j6IOmPiwLqKO5q08Gw"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Elena Vance</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Lead Data Scientist</span></div></div></div></header><main class="w-full pt-16 bg-surface-canvas min-h-screen px-gutter-lg py-gutter-lg"><div class="flex flex-col w-full gap-gutter-lg pb-12">
+<!-- Active Route Meta Tracker (Updates persistence context via script) -->
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const activeLink = document.querySelector('aside nav a[data-path="upload-data"]');
+      if (activeLink) {
+        document.querySelectorAll('aside nav a').forEach(el => {
+          el.classList.remove('bg-primary', 'text-on-primary', 'font-headline-sm', 'shadow-[0_0_16px_rgba(59,130,246,0.2)]');
+          el.classList.add('text-on-surface-variant');
+        });
+        activeLink.classList.add('bg-primary', 'text-on-primary', 'font-headline-sm', 'shadow-[0_0_16px_rgba(59,130,246,0.2)]');
+        activeLink.classList.remove('text-on-surface-variant');
+      }
+    });
+  </script>
+<!-- Top Hero Header & Ingestion Flow Controls -->
+<header class="flex flex-col lg:flex-row lg:items-end justify-between gap-gutter-md">
+<div class="flex flex-col gap-1 max-w-3xl">
+<div class="flex items-center gap-2">
+<span class="font-kicker text-kicker uppercase tracking-wider text-secondary font-bold">Data Ingestion</span>
+<span class="text-outline-variant font-label-sm text-label-sm">/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant font-semibold">Multi-Source Connectors</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold tracking-tight ml-2">Studio v3.2</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-tight">Connect &amp; Upload Dataset</h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Ingest structured tables, cloud warehouses, and streaming sources with automated schema parsing, strict type inference, and native PII masking pipelines.
+      </p>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<button class="h-10 px-4 rounded-lg bg-surface-card hover:bg-surface-subtle text-on-surface shadow-sm font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-secondary">link</span>
+<span>Import via URL / API</span>
+</button>
+<button class="h-10 px-4 rounded-lg bg-surface-card hover:bg-surface-subtle text-on-surface shadow-sm font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] text-status-warning">auto_awesome_motion</span>
+<span>Demo Datasets</span>
+</button>
+<button class="h-10 px-4 rounded-lg bg-primary hover:bg-secondary text-on-primary shadow-sm font-label-md text-label-md flex items-center gap-2 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">sync</span>
+<span>Cloud Storage Sync</span>
+</button>
+</div>
+</header>
+<!-- Telemetry & Source Limits KPI Grid -->
+<section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter-md">
+<!-- Storage Quota -->
+<div class="p-gutter-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<span class="font-kicker text-kicker uppercase text-on-surface-variant">Storage Quota</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">72% Full</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-code-metric text-code-metric text-on-surface tabular-nums">36.2</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ 50 GB allocated</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden mt-3">
+<div class="h-full bg-primary rounded-full" style="width: 72%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>Fast NVMe Cluster</span>
+<span class="text-secondary font-semibold cursor-pointer hover:underline">Upgrade Tier</span>
+</div>
+</div>
+<!-- Monthly Ingestion Record Volume -->
+<div class="p-gutter-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<span class="font-kicker text-kicker uppercase text-on-surface-variant">Monthly Volume</span>
+<span class="flex items-center gap-1 font-label-sm text-label-sm text-status-success font-semibold">
+<span class="material-symbols-outlined text-[14px]">arrow_upward</span> +18.4%
+        </span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-baseline gap-1">
+<span class="font-code-metric text-code-metric text-on-surface tabular-nums">1.42M</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ 5.0M Records</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden mt-3">
+<div class="h-full bg-secondary rounded-full" style="width: 28.4%;"></div>
+</div>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span>Resets in 11 days</span>
+<span class="text-on-surface font-semibold">High Throughput</span>
+</div>
+</div>
+<!-- Security & Encryption Shield -->
+<div class="p-gutter-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between gap-3">
+<div class="flex items-center justify-between">
+<span class="font-kicker text-kicker uppercase text-on-surface-variant">Data Governance</span>
+<span class="flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-low text-status-success font-label-sm text-label-sm font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> SOC2 Ready
+        </span>
+</div>
+<div class="flex flex-col gap-1">
+<span class="font-code-metric text-code-metric text-on-surface">AES-256</span>
+<span class="font-body-md text-body-md text-on-surface-variant">Zero-knowledge storage rest &amp; transit</span>
+</div>
+<div class="flex items-center gap-2 pt-1 font-label-sm text-label-sm text-secondary font-medium">
+<span class="material-symbols-outlined text-[16px]">verified_user</span>
+<span>Automatic PII Redaction Active</span>
+</div>
+</div>
+<!-- Gemini Schema Parsing Engine -->
+<div class="p-gutter-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between gap-3 relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 rounded-full bg-surface-container-high opacity-40 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-kicker text-kicker uppercase text-on-surface-variant">Parsing Architecture</span>
+<span class="px-2 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">Engine v3.2</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">cognition</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Gemini Ingest Pro</span>
+</div>
+<span class="font-body-md text-body-md text-on-surface-variant">140ms schema heuristic parser</span>
+</div>
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant pt-1">
+<span class="text-status-success font-semibold">100% Ingestion Uptime</span>
+<span class="text-secondary font-medium">Telemetry Log</span>
+</div>
+</div>
+</section>
+<!-- Central Drag-and-Drop Ingestion Canvas -->
+<section class="p-gutter-lg rounded-2xl bg-surface-card shadow-sm flex flex-col gap-gutter-lg">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-1">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Dataset Drop Canvas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Direct file ingestion with concurrent column-level type evaluation</p>
+</div>
+<div class="flex items-center gap-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Max single file limit:</span>
+<span class="px-2.5 py-1 rounded bg-surface-subtle font-label-sm text-label-sm text-on-surface font-semibold font-code-metric">1.0 GB</span>
+</div>
+</div>
+<!-- Active Dropzone Component -->
+<div class="group relative rounded-xl bg-surface-canvas p-gutter-2xl flex flex-col items-center justify-center text-center cursor-pointer transition-all duration-300 hover:bg-surface-container-low/40" id="dropzone">
+<div class="w-16 h-16 rounded-2xl bg-surface-container-high text-primary flex items-center justify-center shadow-sm mb-4 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-[36px]">cloud_upload</span>
+</div>
+<div class="flex flex-col gap-1 max-w-md">
+<span class="font-headline-sm text-headline-sm text-on-surface">
+          Drag &amp; drop your dataset here or browse files
+        </span>
+<span class="font-body-md text-body-md text-on-surface-variant">
+          Upload structured spreadsheets, delimited files, or nested binary frames for rapid parsing
+        </span>
+</div>
+<!-- File Type Badges -->
+<div class="flex flex-wrap items-center justify-center gap-2 mt-5">
+<span class="px-2.5 py-1 rounded-md bg-surface-card text-on-surface-variant font-label-sm text-label-sm shadow-sm font-semibold">.CSV (UTF-8)</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-card text-on-surface-variant font-label-sm text-label-sm shadow-sm font-semibold">.XLSX / .XLS</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-card text-on-surface-variant font-label-sm text-label-sm shadow-sm font-semibold">.JSON (NDJSON)</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-card text-on-surface-variant font-label-sm text-label-sm shadow-sm font-semibold">.PARQUET</span>
+<span class="px-2.5 py-1 rounded-md bg-surface-card text-on-surface-variant font-label-sm text-label-sm shadow-sm font-semibold">.SQLITE</span>
+</div>
+<div class="mt-6 flex items-center gap-3">
+<input accept=".csv,.xlsx,.xls,.json,.parquet,.sqlite" class="hidden" id="fileInput" multiple="" type="file"/>
+<button class="h-11 px-6 rounded-lg bg-primary hover:bg-secondary text-on-primary font-headline-sm text-headline-sm shadow-md transition-all flex items-center gap-2" onclick="document.getElementById('fileInput').click()" type="button">
+<span class="material-symbols-outlined text-[20px]">folder_open</span>
+<span>Browse Files</span>
+</button>
+</div>
+</div>
+<!-- Quick Ingestion Options & Checkboxes -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 pt-2">
+<label class="p-3.5 rounded-xl bg-surface-subtle flex items-start gap-3 cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-secondary accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Auto-detect header row &amp; delim</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Infers comma, tab, or pipe delimiters automatically</span>
+</div>
+</label>
+<label class="p-3.5 rounded-xl bg-surface-subtle flex items-start gap-3 cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-secondary accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Immediate Gemini Data Profile</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Extract cardinality, skewness, &amp; missing distributions</span>
+</div>
+</label>
+<label class="p-3.5 rounded-xl bg-surface-subtle flex items-start gap-3 cursor-pointer hover:bg-surface-container transition-colors">
+<input checked="" class="mt-1 w-4 h-4 rounded text-primary focus:ring-secondary accent-primary" type="checkbox"/>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-semibold text-on-surface">Mask Sensitive PII</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Anonymize customer emails, phones, and payment card tokens</span>
+</div>
+</label>
+</div>
+</section>
+<!-- Multi-Source Data Connectors Grid -->
+<section class="flex flex-col gap-gutter-md">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<h2 class="font-headline-md text-headline-md text-on-surface">Enterprise Data Connectors</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Synchronize directly from your data warehouses, lakes, and relational instances</p>
+</div>
+<button class="font-label-md text-label-md text-secondary font-semibold flex items-center gap-1 hover:underline" type="button">
+<span>View all 24 integrations</span>
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-gutter-md">
+<!-- Snowflake Card -->
+<div class="p-gutter-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between gap-4 transition-all hover:shadow-md">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">ac_unit</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-status-success font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Connected
+            </span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Snowflake Data Cloud</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Direct warehouse SQL extraction or warehouse table mirror with hourly refresh.
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">3 active tables</span>
+<button class="px-3 py-1.5 rounded-md bg-surface-subtle hover:bg-surface-container font-label-sm text-label-sm text-primary font-semibold transition-colors" type="button">
+            Configure
+          </button>
+</div>
+</div>
+<!-- BigQuery Card -->
+<div class="p-gutter-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between gap-4 transition-all hover:shadow-md">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">query_stats</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-subtle text-on-surface-variant font-label-sm text-label-sm font-semibold">
+              Available
+            </span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">Google BigQuery</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Query GCP projects or enterprise federated views via Google Service Accounts.
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">GCP IAM Auth</span>
+<button class="px-3 py-1.5 rounded-md bg-primary hover:bg-secondary font-label-sm text-label-sm text-on-primary font-semibold transition-colors" type="button">
+            Connect
+          </button>
+</div>
+</div>
+<!-- PostgreSQL / MySQL Card -->
+<div class="p-gutter-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between gap-4 transition-all hover:shadow-md">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[24px]">database</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-subtle text-on-surface-variant font-label-sm text-label-sm font-semibold">
+              Available
+            </span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">PostgreSQL / MySQL</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Encrypted read-replica SSH tunnel for transactional operational snapshots.
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">SSL / VPC Peering</span>
+<button class="px-3 py-1.5 rounded-md bg-primary hover:bg-secondary font-label-sm text-label-sm text-on-primary font-semibold transition-colors" type="button">
+            Connect
+          </button>
+</div>
+</div>
+<!-- AWS S3 / GCS Card -->
+<div class="p-gutter-md rounded-xl bg-surface-card shadow-sm flex flex-col justify-between gap-4 transition-all hover:shadow-md">
+<div class="flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded-lg bg-surface-container flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[24px]">cloud_sync</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-status-success font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Connected
+            </span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface">AWS S3 / GCS Lake</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">
+              Object storage URI listener with partition discovery and delta lake syncing.
+            </span>
+</div>
+</div>
+<div class="flex items-center justify-between pt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium">1 target bucket</span>
+<button class="px-3 py-1.5 rounded-md bg-surface-subtle hover:bg-surface-container font-label-sm text-label-sm text-primary font-semibold transition-colors" type="button">
+            Configure
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Recent Ingestion Activity & Parsing Queue -->
+<section class="rounded-2xl bg-surface-card shadow-sm p-gutter-lg flex flex-col gap-gutter-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-center gap-3">
+<h2 class="font-headline-md text-headline-md text-on-surface">Ingestion Queue &amp; Recent Activity</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-primary font-label-sm text-label-sm font-bold">4 Files</span>
+</div>
+<div class="flex items-center gap-2">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">filter_list</span>
+<input class="h-9 pl-9 pr-3 rounded-lg bg-surface-subtle text-on-surface font-body-sm text-body-sm placeholder:text-outline focus:outline-none focus:bg-surface-canvas transition-all" placeholder="Filter pipeline logs..." type="text"/>
+</div>
+<button class="h-9 px-3 rounded-lg bg-surface-subtle hover:bg-surface-container text-on-surface font-label-md text-label-md flex items-center gap-1 transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">refresh</span>
+<span>Refresh</span>
+</button>
+</div>
+</div>
+<!-- Data Table of Datasets -->
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse min-w-[760px]">
+<thead>
+<tr class="bg-surface-canvas text-on-surface-variant font-kicker text-kicker uppercase">
+<th class="py-3 px-4 rounded-l-lg">Dataset Source</th>
+<th class="py-3 px-4">Size &amp; Shape</th>
+<th class="py-3 px-4">Schema &amp; PII Status</th>
+<th class="py-3 px-4">Ingested</th>
+<th class="py-3 px-4 text-right rounded-r-lg">Direct Pipeline Actions</th>
+</tr>
+</thead>
+<tbody class="divide-y-0 text-on-surface font-body-md text-body-md">
+<!-- Row 1: Active In-Use File -->
+<tr class="hover:bg-surface-canvas/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container-high text-primary flex items-center justify-center font-label-sm text-label-sm font-bold">
+                  CSV
+                </div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-headline-sm text-headline-sm font-semibold truncate text-primary">ecommerce_customer_churn_q3.csv</span>
+<span class="px-1.5 py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase font-bold">Active</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Schema: 18 columns (9 numeric, 7 categorical, 2 timestamp)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md">
+<span class="font-semibold text-on-surface">42.8 MB</span>
+<span class="text-on-surface-variant block font-body-sm text-body-sm">128,450 rows</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-status-success font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Ready
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Profile Complete</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">
+              14 mins ago
+            </td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-3 py-1 rounded bg-surface-subtle hover:bg-surface-container text-primary font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                  Profiler
+                </button>
+<button class="px-3 py-1 rounded bg-surface-subtle hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                  Clean
+                </button>
+<button class="px-3 py-1 rounded bg-primary text-on-primary font-label-sm text-label-sm font-semibold hover:bg-secondary transition-colors" type="button">
+                  Explore
+                </button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Parquet Attribution -->
+<tr class="hover:bg-surface-canvas/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-surface-container text-secondary flex items-center justify-center font-label-sm text-label-sm font-bold">
+                  PQT
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold truncate text-on-surface">q3_marketing_attribution_leads.parquet</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Schema: 32 columns (SNAPPY compressed columnar)</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md">
+<span class="font-semibold text-on-surface">18.2 MB</span>
+<span class="text-on-surface-variant block font-body-sm text-body-sm">45,210 rows</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-status-success font-label-sm text-label-sm font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span> Ready
+                </span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Indexed</span>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">
+              2 hours ago
+            </td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-3 py-1 rounded bg-surface-subtle hover:bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold transition-colors" type="button">
+                  Open in EDA
+                </button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-subtle" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Processing XLSX -->
+<tr class="hover:bg-surface-canvas/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-status-warning/10 text-status-warning flex items-center justify-center font-label-sm text-label-sm font-bold">
+                  XLS
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold truncate text-on-surface">stripe_billing_sync_september.xlsx</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Running automated PII redaction tokenization...</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md">
+<span class="font-semibold text-on-surface">9.4 MB</span>
+<span class="text-on-surface-variant block font-body-sm text-body-sm">14,800 rows</span>
+</td>
+<td class="py-3.5 px-4">
+<div class="flex flex-col gap-1.5 max-w-[140px]">
+<div class="flex items-center justify-between font-label-sm text-label-sm">
+<span class="text-secondary font-semibold">Processing</span>
+<span class="text-on-surface-variant font-bold">84%</span>
+</div>
+<div class="w-full h-1.5 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-secondary animate-pulse rounded-full" style="width: 84%;"></div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">
+              Just now
+            </td>
+<td class="py-3.5 px-4 text-right">
+<button class="px-3 py-1 rounded bg-surface-subtle text-on-surface-variant font-label-sm text-label-sm font-semibold cursor-not-allowed opacity-75" type="button">
+                Queued
+              </button>
+</td>
+</tr>
+<!-- Row 4: Attention JSON -->
+<tr class="hover:bg-surface-canvas/60 transition-colors">
+<td class="py-3.5 px-4">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-error-container text-error flex items-center justify-center font-label-sm text-label-sm font-bold">
+                  JSON
+                </div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-semibold truncate text-on-surface">user_clickstream_events_raw.json</span>
+<span class="font-body-sm text-body-sm text-error font-medium">Warning: 14 duplicated key definitions encountered on root</span>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-4 font-label-md text-label-md">
+<span class="font-semibold text-on-surface">114.0 MB</span>
+<span class="text-on-surface-variant block font-body-sm text-body-sm">512,000 rows</span>
+</td>
+<td class="py-3.5 px-4">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-semibold inline-flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">error</span> Needs Attention
+              </span>
+</td>
+<td class="py-3.5 px-4 font-body-sm text-body-sm text-on-surface-variant">
+              Yesterday
+            </td>
+<td class="py-3.5 px-4 text-right">
+<div class="flex items-center justify-end gap-1.5">
+<button class="px-3 py-1 rounded bg-surface-container-high text-primary font-label-sm text-label-sm font-semibold hover:bg-surface-variant transition-colors" type="button">
+                  Resolve Conflicts
+                </button>
+<button class="w-8 h-8 rounded flex items-center justify-center text-on-surface-variant hover:bg-surface-subtle" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</div></main></div></body></html>

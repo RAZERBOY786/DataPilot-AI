@@ -1,0 +1,1073 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>DataPilot AI | Smart Data Processing</title>
+
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/chart.js"
+    ></script>
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         APP LAYOUT
+    ====================================================== -->
+
+    <div class="app-layout">
+
+
+        <!-- =====================================================
+             SIDEBAR
+        ====================================================== -->
+
+        <aside class="sidebar">
+
+
+            <div class="sidebar-logo">
+
+                <div class="logo-icon">
+
+                    <i class="fa-solid fa-chart-line"></i>
+
+                </div>
+
+
+                <div class="logo-text">
+
+                    Data<span>Pilot</span>
+
+                    <small>AI</small>
+
+                </div>
+
+            </div>
+
+
+            <!-- NAVIGATION -->
+
+            <nav class="sidebar-nav">
+
+
+                <button
+                    class="nav-item active"
+                    data-section="upload-section"
+                >
+
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                    <span>Upload Data</span>
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-section="datasets-section"
+                >
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <span>Datasets</span>
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-section="profile-section"
+                >
+
+                    <i class="fa-solid fa-chart-simple"></i>
+
+                    <span>Data Profile</span>
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-section="cleaning-section"
+                >
+
+                    <i class="fa-solid fa-broom"></i>
+
+                    <span>Data Cleaning</span>
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-section="eda-section"
+                >
+
+                    <i class="fa-solid fa-chart-pie"></i>
+
+                    <span>EDA & Insights</span>
+
+                </button>
+
+
+                <button
+                    class="nav-item"
+                    data-section="ai-section"
+                >
+
+                    <i class="fa-solid fa-robot"></i>
+
+                    <span>AI Assistant</span>
+
+                </button>
+
+
+            </nav>
+
+
+            <div class="sidebar-bottom">
+
+
+                <div class="sidebar-info">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                    <span>
+                        AI Powered Analysis
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+        </aside>
+
+
+        <!-- =====================================================
+             MAIN AREA
+        ====================================================== -->
+
+        <main class="main-content">
+
+
+            <!-- =====================================================
+                 TOP BAR
+            ====================================================== -->
+
+            <header class="topbar">
+
+
+                <div class="page-heading">
+
+                    <h1 id="page-title">
+
+                        Upload Data
+
+                    </h1>
+
+
+                    <p>
+
+                        Clean, analyze and understand your data faster.
+
+                    </p>
+
+                </div>
+
+
+                <div class="topbar-actions">
+
+
+                    <div
+                        id="active-dataset-label"
+                        class="active-dataset-label"
+                    >
+
+                        No dataset selected
+
+                    </div>
+
+
+                    <button
+                        id="theme-toggle"
+                        class="theme-toggle"
+                        aria-label="Toggle Theme"
+                    >
+
+                        <span id="theme-icon">
+
+                            ☾
+
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+
+            </header>
+
+
+            <!-- =====================================================
+                 PAGE CONTENT
+            ====================================================== -->
+
+            <div class="page-content">
+
+
+                <!-- =====================================================
+                     UPLOAD SECTION
+                ====================================================== -->
+
+                <section
+                    id="upload-section"
+                    class="content-section active"
+                >
+
+
+                    <div class="section-intro">
+
+                        <div>
+
+                            <span class="section-tag">
+
+                                GET STARTED
+
+                            </span>
+
+
+                            <h2>
+
+                                Upload Your Dataset
+
+                            </h2>
+
+
+                            <p>
+
+                                Upload CSV, Excel or JSON files and let
+                                DataPilot AI analyze your data.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- UPLOAD CARD -->
+
+                    <div class="upload-card">
+
+
+                        <div
+                            id="upload-area"
+                            class="upload-area"
+                        >
+
+
+                            <div class="upload-icon">
+
+                                <i class="fa-solid fa-cloud-arrow-up"></i>
+
+                            </div>
+
+
+                            <h3>
+
+                                Drop your dataset here
+
+                            </h3>
+
+
+                            <p>
+
+                                or choose a file from your computer
+
+                            </p>
+
+
+                            <button
+                                id="choose-file-btn"
+                                class="secondary-btn"
+                            >
+
+                                <i class="fa-solid fa-folder-open"></i>
+
+                                Choose File
+
+                            </button>
+
+
+                            <input
+                                type="file"
+                                id="file-input"
+                                accept=".csv,.xlsx,.xls,.json"
+                                hidden
+                            >
+
+
+                            <div class="supported-format-list">
+
+                                <span>CSV</span>
+
+                                <span>Excel</span>
+
+                                <span>JSON</span>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <!-- SELECTED FILE -->
+
+                        <div
+                            id="selected-file"
+                            class="selected-file hidden"
+                        >
+
+
+                            <div class="selected-file-info">
+
+                                <div class="file-icon">
+
+                                    <i class="fa-solid fa-file-lines"></i>
+
+                                </div>
+
+
+                                <div>
+
+                                    <span class="small-label">
+
+                                        SELECTED FILE
+
+                                    </span>
+
+
+                                    <h4
+                                        id="selected-file-name"
+                                    >
+
+                                        No file selected
+
+                                    </h4>
+
+                                </div>
+
+                            </div>
+
+
+                            <button
+                                id="upload-btn"
+                                class="primary-btn"
+                            >
+
+                                Upload Dataset
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </button>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- UPLOAD RESULT -->
+
+                    <div
+                        id="upload-result"
+                        class="dynamic-result"
+                    ></div>
+
+
+                    <!-- DATASET PREVIEW -->
+
+                    <div
+                        id="dataset-preview-container"
+                        class="dynamic-result"
+                    ></div>
+
+
+                </section>
+
+
+                <!-- =====================================================
+                     DATASETS SECTION
+                ====================================================== -->
+
+                <section
+                    id="datasets-section"
+                    class="content-section"
+                >
+
+
+                    <div class="section-intro">
+
+                        <div>
+
+                            <span class="section-tag">
+
+                                DATA MANAGEMENT
+
+                            </span>
+
+
+                            <h2>
+
+                                Your Datasets
+
+                            </h2>
+
+
+                            <p>
+
+                                Switch between uploaded and cleaned datasets.
+
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            id="refresh-datasets-btn"
+                            class="secondary-btn"
+                        >
+
+                            <i class="fa-solid fa-rotate"></i>
+
+                            Refresh
+
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        id="active-dataset-info"
+                        class="active-dataset-info"
+                    >
+
+                        No active dataset selected.
+
+                    </div>
+
+
+                    <div
+                        id="datasets-container"
+                        class="datasets-grid"
+                    >
+
+
+                        <div class="empty-state">
+
+                            Loading datasets...
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- =====================================================
+                     PROFILE SECTION
+                ====================================================== -->
+
+                <section
+                    id="profile-section"
+                    class="content-section"
+                >
+
+
+                    <div class="section-intro">
+
+                        <div>
+
+                            <span class="section-tag">
+
+                                DATA PROFILING
+
+                            </span>
+
+
+                            <h2>
+
+                                Understand Your Dataset
+
+                            </h2>
+
+
+                            <p>
+
+                                Generate a detailed summary of your data.
+
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            id="generate-profile-btn"
+                            class="primary-btn"
+                        >
+
+                            <i class="fa-solid fa-chart-column"></i>
+
+                            Generate Profile
+
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        id="profile-content"
+                        class="dynamic-result"
+                    >
+
+
+                        <div class="empty-state">
+
+                            Select a dataset and generate its profile.
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- =====================================================
+                     CLEANING SECTION
+                ====================================================== -->
+
+                <section
+                    id="cleaning-section"
+                    class="content-section"
+                >
+
+
+                    <div class="section-intro">
+
+                        <div>
+
+                            <span class="section-tag">
+
+                                SMART CLEANING
+
+                            </span>
+
+
+                            <h2>
+
+                                Clean Your Dataset
+
+                            </h2>
+
+
+                            <p>
+
+                                Detect missing values, duplicates and
+                                common data quality issues.
+
+                            </p>
+
+                        </div>
+
+
+                        <div class="section-actions">
+
+
+                            <button
+                                id="analyze-cleaning-btn"
+                                class="secondary-btn"
+                            >
+
+                                <i class="fa-solid fa-magnifying-glass"></i>
+
+                                Analyze Dataset
+
+                            </button>
+
+
+                            <button
+                                id="apply-all-cleaning-btn"
+                                class="primary-btn"
+                            >
+
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                                Apply All Recommendations
+
+                            </button>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="cleaning-content"
+                        class="dynamic-result"
+                    >
+
+
+                        <div class="empty-state">
+
+                            Analyze your dataset to receive cleaning
+                            recommendations.
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+                <!-- =====================================================
+                     EDA SECTION
+                ====================================================== -->
+
+                <section
+                    id="eda-section"
+                    class="content-section"
+                >
+
+
+                    <div class="section-intro">
+
+                        <div>
+
+                            <span class="section-tag">
+
+                                EXPLORATORY DATA ANALYSIS
+
+                            </span>
+
+
+                            <h2>
+
+                                Explore Your Data
+
+                            </h2>
+
+
+                            <p>
+
+                                Discover patterns, statistics,
+                                distributions and correlations.
+
+                            </p>
+
+                        </div>
+
+
+                        <button
+                            id="generate-eda-btn"
+                            class="primary-btn"
+                        >
+
+                            <i class="fa-solid fa-chart-pie"></i>
+
+                            Run Automated EDA
+
+                        </button>
+
+                    </div>
+
+
+                    <!-- EDA OVERVIEW -->
+
+                    <div
+                        id="eda-content"
+                        class="dynamic-result"
+                    >
+
+
+                        <div class="empty-state">
+
+                            Run automated EDA to explore your dataset.
+
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- EDA CHARTS -->
+
+                    <div
+                        id="eda-charts-container"
+                        class="eda-charts-container"
+                    ></div>
+
+
+                    <!-- EDA INSIGHTS -->
+
+                    <div
+                        id="eda-insights-container"
+                        class="eda-insights-container"
+                    ></div>
+
+
+                </section>
+
+
+                <!-- =====================================================
+                     AI ASSISTANT
+                ====================================================== -->
+
+                <section
+                    id="ai-section"
+                    class="content-section"
+                >
+
+
+                    <div class="section-intro">
+
+                        <div>
+
+                            <span class="section-tag">
+
+                                GEMINI AI ASSISTANT
+
+                            </span>
+
+
+                            <h2>
+
+                                Ask Your Data Anything
+
+                            </h2>
+
+
+                            <p>
+
+                                Ask questions about your dataset using
+                                natural language.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="ai-layout">
+
+
+                        <!-- AI CHAT CARD -->
+
+                        <div class="ai-chat-card">
+
+
+                            <!-- CHAT HEADER -->
+
+                            <div class="ai-chat-header">
+
+
+                                <div class="ai-header-left">
+
+
+                                    <div class="ai-avatar-large">
+
+                                        <i class="fa-solid fa-robot"></i>
+
+                                    </div>
+
+
+                                    <div>
+
+                                        <h3>
+
+                                            DataPilot AI
+
+                                        </h3>
+
+
+                                        <p
+                                            id="ai-dataset-status"
+                                        >
+
+                                            Select or upload a dataset
+                                            to start analyzing.
+
+                                        </p>
+
+                                    </div>
+
+
+                                </div>
+
+
+                                <div class="ai-online-status">
+
+                                    <span></span>
+
+                                    AI Ready
+
+                                </div>
+
+
+                            </div>
+
+
+                            <!-- CHAT MESSAGES -->
+
+                            <div
+                                id="ai-chat-messages"
+                                class="ai-chat-messages"
+                            >
+
+
+                                <div
+                                    class="ai-message assistant-message"
+                                >
+
+
+                                    <div class="message-avatar">
+
+                                        AI
+
+                                    </div>
+
+
+                                    <div class="message-bubble">
+
+                                        Hello! I am DataPilot AI.
+
+                                        <br><br>
+
+                                        Upload a dataset and ask me
+                                        questions about your data,
+                                        patterns, trends and insights.
+
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+
+
+                            <!-- QUICK QUESTIONS -->
+
+                            <div class="ai-suggestions">
+
+
+                                <button
+                                    class="ai-suggestion-btn"
+                                    data-question="Give me a summary of this dataset."
+                                >
+
+                                    Summarize dataset
+
+                                </button>
+
+
+                                <button
+                                    class="ai-suggestion-btn"
+                                    data-question="What are the most important insights from this dataset?"
+                                >
+
+                                    Key insights
+
+                                </button>
+
+
+                                <button
+                                    class="ai-suggestion-btn"
+                                    data-question="Are there any data quality issues in this dataset?"
+                                >
+
+                                    Data quality
+
+                                </button>
+
+
+                                <button
+                                    class="ai-suggestion-btn"
+                                    data-question="What trends or patterns can you identify?"
+                                >
+
+                                    Find patterns
+
+                                </button>
+
+
+                            </div>
+
+
+                            <!-- CHAT INPUT -->
+
+                            <div class="ai-input-area">
+
+
+                                <textarea
+                                    id="ai-question-input"
+                                    placeholder="Ask anything about your dataset..."
+                                    rows="1"
+                                ></textarea>
+
+
+                                <button
+                                    id="ai-send-btn"
+                                    class="ai-send-btn"
+                                    aria-label="Send message"
+                                >
+
+                                    <i class="fa-solid fa-paper-plane"></i>
+
+                                </button>
+
+
+                            </div>
+
+
+                            <p class="ai-input-note">
+
+                                Press Enter to send • Shift + Enter for a new line
+
+                            </p>
+
+
+                        </div>
+
+
+                        <!-- AI SIDE PANEL -->
+
+                        <div class="ai-side-panel">
+
+
+                            <div class="ai-info-card">
+
+
+                                <div class="info-icon">
+
+                                    <i class="fa-solid fa-brain"></i>
+
+                                </div>
+
+
+                                <h3>
+
+                                    AI-Powered Analysis
+
+                                </h3>
+
+
+                                <p>
+
+                                    DataPilot AI analyzes your active
+                                    dataset and helps you understand
+                                    your data through natural language.
+
+                                </p>
+
+
+                            </div>
+
+
+                            <div class="ai-info-card">
+
+
+                                <h3>
+
+                                    You can ask:
+
+                                </h3>
+
+
+                                <ul>
+
+                                    <li>
+                                        What patterns exist in my data?
+                                    </li>
+
+                                    <li>
+                                        Which columns are important?
+                                    </li>
+
+                                    <li>
+                                        Are there missing values?
+                                    </li>
+
+                                    <li>
+                                        Explain unusual trends.
+                                    </li>
+
+                                    <li>
+                                        Give me business insights.
+                                    </li>
+
+                                </ul>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </section>
+
+
+            </div>
+
+
+        </main>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

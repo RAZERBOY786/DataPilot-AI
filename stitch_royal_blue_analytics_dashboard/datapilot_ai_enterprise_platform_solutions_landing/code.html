@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-error": "#ffffff", "on-secondary-fixed": "#001a42", "tertiary-fixed": "#dae2fd", "status-success": "#10B981", "surface-container-low": "#eff4ff", "error-container": "#ffdad6", "on-surface-variant": "#444653", "surface-container-highest": "#d3e4fe", "primary-container": "#1e40af", "surface-variant": "#d3e4fe", "secondary-fixed": "#d8e2ff", "surface-canvas": "#F8FAFC", "tertiary-container": "#434b60", "on-primary-fixed": "#001453", "on-primary-fixed-variant": "#173bab", "secondary": "#0058be", "inverse-primary": "#b8c4ff", "on-primary": "#ffffff", "tertiary": "#2d3449", "surface-subtle": "#F1F5F9", "error": "#ba1a1a", "secondary-fixed-dim": "#adc6ff", "surface-bright": "#f8f9ff", "on-secondary": "#ffffff", "border-focus": "#3B82F6", "sidebar-active": "#1E40AF", "surface-container": "#e5eeff", "background": "#f8f9ff", "border-subtle": "#E2E8F0", "on-error-container": "#93000a", "on-secondary-container": "#fefcff", "surface": "#f8f9ff", "on-primary-container": "#a8b8ff", "secondary-container": "#2170e4", "status-warning": "#F59E0B", "surface-card": "#FFFFFF", "tertiary-fixed-dim": "#bec6e0", "surface-container-lowest": "#ffffff", "surface-container-high": "#dce9ff", "on-secondary-fixed-variant": "#004395", "on-surface": "#0b1c30", "outline": "#757684", "primary-fixed-dim": "#b8c4ff", "status-error": "#EF4444", "surface-dim": "#cbdbf5", "inverse-surface": "#213145", "primary": "#00288e", "on-tertiary-fixed": "#131b2e", "sidebar-bg": "#0B132B", "surface-tint": "#3755c3", "on-tertiary-fixed-variant": "#3f465c", "on-tertiary-container": "#b4bbd5", "on-background": "#0b1c30", "outline-variant": "#c4c5d5", "primary-fixed": "#dde1ff", "on-tertiary": "#ffffff", "inverse-on-surface": "#eaf1ff", "accent-glow": "rgba(59, 130, 246, 0.15)" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter-md": "1rem", "gutter-xs": "0.25rem", "gutter-lg": "1.5rem", "gutter-sm": "0.5rem", "sidebar-width": "260px", "sidebar-collapsed": "72px", "card-pad-sm": "1rem", "gutter-2xl": "3rem", "topbar-height": "64px", "gutter-xl": "2rem", "card-pad-lg": "2rem", "card-pad-md": "1.5rem" }, "fontFamily": { "headline-xl": ["Plus Jakarta Sans"], "label-sm": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "headline-md": ["Plus Jakarta Sans"], "code-metric": ["Inter"], "display-lg": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "kicker": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "display-lg-mobile": ["Plus Jakarta Sans"], "body-md": ["Inter"] }, "fontSize": { "headline-xl": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-sm": ["11px", { "lineHeight": "16px", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["13px", { "lineHeight": "18px", "fontWeight": "500" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "code-metric": ["28px", { "lineHeight": "32px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-lg": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-sm": ["16px", { "lineHeight": "24px", "fontWeight": "600" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "kicker": ["11px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "display-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface-canvas text-on-surface antialiased"><aside class="fixed left-0 top-0 bottom-0 w-[260px] bg-surface-card shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between"><div class="flex flex-col"><div class="h-16 flex items-center px-gutter-lg gap-gutter-sm"><img alt="DataPilot AI Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UoiZlG-hYeemHLFqrp2r7j5MHMtRGRJ9kgRfJUWzdDBe-dE2IgGpRX7uK-3qwR5w0uPjds7r7H5Xnxus6HyzC-THpr2NrhGUE9bAwJN2nwD3OUOKH-zYpaybACxkzNYXR9F6UgFtNYFnuneuVBDLkyK_n3aP6tiZhLKsapUylLqPDBOEXVE6-fSLh8PEh8PPFBgbJoMunr7GQ3FUms6RoXMHVjrACwpuqgADuu4cTSRzodzo7DvkJo4LA"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary leading-none">DataPilot</span><span class="font-kicker text-kicker uppercase text-secondary font-bold tracking-wider">Enterprise AI</span></div></div><div class="px-gutter-lg py-gutter-sm"><div class="flex items-center justify-between px-3 py-2 rounded-lg bg-surface-subtle text-on-surface-variant"><div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-status-success"></span><span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface">Cluster Live</span></div><span class="font-label-sm text-label-sm text-secondary font-medium">US-East</span></div></div><nav class="flex flex-col gap-1 px-gutter-sm mt-2" data-active-classes="bg-primary text-on-primary font-headline-sm shadow-[0_0_16px_rgba(59,130,246,0.2)]"><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="upload-data" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">cloud_upload</span><span class="font-label-md text-label-md">Upload Data</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="datasets" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">dataset</span><span class="font-label-md text-label-md">Datasets</span></div><span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">14</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="data-profile" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">analytics</span><span class="font-label-md text-label-md">Data Profile</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="data-cleaning" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">auto_fix_high</span><span class="font-label-md text-label-md">Data Cleaning</span></div><span class="flex items-center justify-center w-5 h-5 rounded-full bg-error-container text-error font-label-sm text-label-sm font-bold">3</span></a><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="eda-insights" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px]">insights</span><span class="font-label-md text-label-md">EDA &amp; Insights</span></div></a><a class="flex items-center justify-between px-3 py-2.5 rounded-lg text-on-surface-variant hover:bg-surface-container-low hover:text-primary transition-colors" data-path="ai-assistant" href="#"><div class="flex items-center gap-3"><span class="material-symbols-outlined text-[20px] text-secondary">auto_awesome</span><span class="font-label-md text-label-md">AI Assistant</span></div><span class="px-1.5 py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm uppercase font-bold tracking-tight">Gemini</span></a></nav></div><div class="p-gutter-md"><div class="p-3 rounded-xl bg-surface-subtle flex flex-col gap-2"><div class="flex items-center justify-between"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase font-semibold">Storage Quota</span><span class="font-label-sm text-label-sm text-primary font-bold">72%</span></div><div class="w-full h-1.5 bg-surface-variant rounded-full overflow-hidden"><div class="h-full bg-primary w-[72%]"></div></div><span class="font-body-sm text-body-sm text-on-surface-variant">36.2 GB of 50 GB used</span></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface-card/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-gutter-lg"><div class="flex items-center gap-gutter-md flex-1"><div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-primary max-w-md"><span class="material-symbols-outlined text-[18px] text-secondary">table_view</span><span class="font-label-md text-label-md truncate font-semibold">ecommerce_customer_churn_q3.csv</span><span class="font-body-sm text-body-sm text-on-surface-variant whitespace-nowrap">(42.8 MB • 128,450 rows)</span><span class="material-symbols-outlined text-[16px] text-on-surface-variant cursor-pointer">arrow_drop_down</span></div><div class="relative flex-1 max-w-sm"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline text-[18px]">search</span><input class="w-full h-9 pl-9 pr-4 rounded-lg bg-surface-subtle font-body-sm text-body-sm text-on-surface placeholder:text-outline focus:outline-none focus:bg-surface-card focus:shadow-[0_0_0_2px_rgba(59,130,246,0.3)] transition-all" placeholder="Search columns, anomalies, metrics..." type="text"/></div></div><div class="flex items-center gap-gutter-md"><div class="hidden xl:flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container"><span class="w-2 h-2 rounded-full bg-status-success animate-pulse"></span><span class="font-label-sm text-label-sm font-semibold text-primary">Gemini AI Engine: Active</span><span class="font-label-sm text-label-sm text-on-surface-variant">• Latency 140ms</span></div><div class="flex items-center gap-1"><button aria-label="Theme Toggle" class="w-9 h-9 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">light_mode</span></button><button aria-label="Notifications" class="relative w-9 h-9 flex items-center justify-center rounded-lg text-on-surface-variant hover:bg-surface-subtle hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full ring-2 ring-surface-card"></span></button></div><div class="h-6 w-[1px] bg-border-subtle"></div><div class="flex items-center gap-3"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_0_1px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1icbk4F1zbsN0buZSWPCFdvPM1VE8gJ23mbbj7yqFrTgR1NOKodfiRb9czkOWIHzx3pKTtorE4uLEnMS9nLeSgyG8jgU2NB6cCAQOlFdKYucPztA9ETJcy2CNd_tdeJO_svQZShBpKXMVsiukmcG79Vbbm3APvGYpvnoCG-XjsB3ULUACpAhT8Z-h_zua_yBkNomuW03RWI_6N0LseVgl_kuONTdtfnQXkQC7j6IOmPiwLqKO5q08Gw"/><div class="flex flex-col text-left"><span class="font-label-md text-label-md text-on-surface font-semibold leading-tight">Elena Vance</span><span class="font-body-sm text-body-sm text-on-surface-variant leading-tight">Lead Data Scientist</span></div></div></div></header><main class="w-full pt-16 bg-surface-canvas min-h-screen px-gutter-lg py-gutter-lg"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO & LIVE TELEMETRY PREVIEW -->
+<section class="relative overflow-hidden rounded-2xl bg-gradient-to-b from-surface-container-low via-surface-card to-surface-card p-gutter-lg lg:p-card-pad-lg mb-gutter-xl shadow-sm">
+<div class="absolute -top-24 -right-24 w-96 h-96 bg-secondary-fixed opacity-40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -left-20 w-72 h-72 bg-primary-fixed opacity-30 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-center">
+<!-- Left Column: Copy & CTAs -->
+<div class="lg:col-span-7 flex flex-col items-start text-left">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-card shadow-sm mb-gutter-md">
+<span class="flex h-2 w-2 rounded-full bg-status-success animate-pulse"></span>
+<span class="font-kicker text-kicker uppercase text-secondary tracking-wider">Gemini 1.5 Pro Native Engine</span>
+<span class="font-label-sm text-label-sm px-2 py-0.5 rounded-md bg-secondary-fixed text-on-secondary-fixed">v4.2 Released</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface tracking-tight leading-tight max-w-2xl">
+          Autonomous Data Analytics &amp; Automated Quality Studio
+        </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mt-gutter-md max-w-xl leading-relaxed">
+          Turn messy tabular data into boardroom-ready predictive insights, automatic cleaning pipelines, and production SQL in seconds. No manual data munging required.
+        </p>
+<!-- CTA Cluster -->
+<div class="flex flex-wrap items-center gap-gutter-md mt-gutter-lg">
+<button class="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-on-primary font-headline-sm text-headline-sm hover:bg-secondary transition-all shadow-[0_4px_16px_rgba(30,64,175,0.25)] hover:shadow-[0_6px_20px_rgba(0,88,190,0.35)] cursor-pointer">
+<span class="material-symbols-outlined text-[20px]">bolt</span>
+<span>Start Free Analysis</span>
+</button>
+<button class="flex items-center gap-2 px-6 py-3.5 rounded-xl bg-surface-card text-on-surface font-headline-sm text-headline-sm shadow-sm hover:bg-surface-subtle transition-all cursor-pointer">
+<span class="material-symbols-outlined text-[20px] text-secondary">calendar_month</span>
+<span>Book Enterprise Demo</span>
+</button>
+<div class="flex items-center gap-1 ml-2 text-on-surface-variant font-label-md text-label-md">
+<span class="material-symbols-outlined text-status-success text-[18px]">verified_user</span>
+<span>No credit card required</span>
+</div>
+</div>
+<!-- Metric Pointers -->
+<div class="grid grid-cols-3 gap-gutter-md mt-gutter-xl pt-gutter-md border-t border-border-subtle/40 w-full max-w-lg">
+<div>
+<div class="font-code-metric text-code-metric text-primary">140ms</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Inference Latency</div>
+</div>
+<div>
+<div class="font-code-metric text-code-metric text-primary">99.8%</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Schema Accuracy</div>
+</div>
+<div>
+<div class="font-code-metric text-code-metric text-secondary">Zero</div>
+<div class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Data Drift Loss</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Live Preview Card -->
+<div class="lg:col-span-5 w-full">
+<div class="bg-surface-card rounded-2xl shadow-xl overflow-hidden">
+<!-- Card Header / Breadcrumb -->
+<div class="bg-surface-subtle px-gutter-md py-3 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-error/70"></span>
+<span class="w-3 h-3 rounded-full bg-status-warning/70"></span>
+<span class="w-3 h-3 rounded-full bg-status-success/70"></span>
+<span class="font-body-sm text-body-sm text-on-surface-variant ml-2 font-mono">cluster-node-us-east-1a</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold">Grounded Execution</span>
+</div>
+<!-- Active Card Body -->
+<div class="p-card-pad-md flex flex-col gap-gutter-md">
+<div class="flex items-start justify-between">
+<div>
+<span class="font-kicker text-kicker uppercase text-primary">Active Inspection Session</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-0.5">ecommerce_customer_churn_q3.csv</h3>
+</div>
+<span class="px-2.5 py-1 rounded-lg bg-surface-container-low text-primary font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">sync</span> LIVE
+              </span>
+</div>
+<!-- Mini Telemetry Strip -->
+<div class="grid grid-cols-2 gap-2 bg-surface-container-low p-3 rounded-xl">
+<div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Validated Rows</div>
+<div class="font-headline-sm text-headline-sm text-on-surface">128,450 / 128,450</div>
+</div>
+<div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Data Drift Index</div>
+<div class="font-headline-sm text-headline-sm text-status-success">0.002 (Nominal)</div>
+</div>
+</div>
+<!-- Visual Ingestion Progress Chart SVG -->
+<div class="flex flex-col gap-1.5">
+<div class="flex justify-between items-center font-label-sm text-label-sm">
+<span class="text-on-surface-variant">Auto-Sanitization Pipeline</span>
+<span class="text-primary font-bold">100% Complete</span>
+</div>
+<div class="w-full h-2 bg-surface-container rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container to-primary w-full rounded-full transition-all duration-1000"></div>
+</div>
+</div>
+<!-- Pipeline Log Ticker -->
+<div class="bg-sidebar-bg text-on-secondary rounded-xl p-3.5 font-mono text-body-sm space-y-1.5 shadow-inner">
+<div class="flex items-center justify-between text-secondary-fixed-dim font-label-sm text-label-sm">
+<span>EXEC_STREAM: GEMINI_ORCHESTRATOR</span>
+<span class="text-status-success">SECURE_ENCLAVE</span>
+</div>
+<div class="text-surface-container-highest truncate">
+<span class="text-status-warning">[OK]</span> 14 missing values imputed via KNN Iterative Imputer
+              </div>
+<div class="text-surface-container-highest truncate">
+<span class="text-status-success">[OK]</span> 3 multivariate skew anomalies normalized with Box-Cox
+              </div>
+<div class="text-inverse-primary truncate">
+<span class="text-secondary-fixed-dim">[GEN]</span> Synthesizing SQL dbt-model for production pipeline...
+              </div>
+</div>
+<!-- Card Interactive Action Buttons -->
+<div class="grid grid-cols-2 gap-2 pt-1">
+<button class="py-2.5 px-3 rounded-lg bg-surface-subtle hover:bg-surface-container-high text-on-surface font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">download</span> Export Artifacts
+              </button>
+<button class="py-2.5 px-3 rounded-lg bg-primary text-on-primary font-label-md text-label-md transition-colors flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-[18px]">play_arrow</span> Open Notebook
+              </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: SOCIAL PROOF, ENTERPRISE LOGOS & TRUST BADGES -->
+<section class="bg-surface-card rounded-2xl p-gutter-lg mb-gutter-xl shadow-sm">
+<div class="flex flex-col lg:flex-row items-center justify-between gap-gutter-lg pb-gutter-md border-b border-border-subtle/40">
+<div class="flex flex-col text-left">
+<span class="font-kicker text-kicker uppercase text-secondary">Verified Enterprise Trust</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Accelerating Analytics at Global Scale</h2>
+</div>
+<!-- Key Enterprise Badges -->
+<div class="flex flex-wrap items-center gap-gutter-md">
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-subtle font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-secondary text-[18px]">security</span>
+<span>SOC2 Type II Certified</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-subtle font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-primary text-[18px]">lock</span>
+<span>HIPAA &amp; GDPR Ready</span>
+</div>
+<div class="flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-subtle font-label-md text-label-md text-on-surface">
+<span class="material-symbols-outlined text-status-success text-[18px]">speed</span>
+<span>99.99% Guaranteed SLA</span>
+</div>
+</div>
+</div>
+<!-- Telemetry Row -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-gutter-md py-gutter-lg">
+<div class="flex flex-col items-center text-center p-3 rounded-xl bg-surface-container-low">
+<span class="font-code-metric text-code-metric text-primary">4.8M+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Rows Processed Daily</span>
+</div>
+<div class="flex flex-col items-center text-center p-3 rounded-xl bg-surface-container-low">
+<span class="font-code-metric text-code-metric text-secondary">85%</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Reduction in ETL Prep Time</span>
+</div>
+<div class="flex flex-col items-center text-center p-3 rounded-xl bg-surface-container-low">
+<span class="font-code-metric text-code-metric text-primary">1,200+</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Production dbt Models Generated</span>
+</div>
+<div class="flex flex-col items-center text-center p-3 rounded-xl bg-surface-container-low">
+<span class="font-code-metric text-code-metric text-status-success">0 Incidents</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant mt-1">Zero Security Breaches</span>
+</div>
+</div>
+<!-- Client Logo Rail -->
+<div class="grid grid-cols-2 md:grid-cols-5 gap-6 items-center justify-items-center opacity-75 grayscale hover:grayscale-0 transition-all pt-2">
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-on-surface tracking-tight">
+<span class="material-symbols-outlined text-primary text-[28px]">cloud_circle</span> Acme Cloud
+      </div>
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-on-surface tracking-tight">
+<span class="material-symbols-outlined text-secondary text-[28px]">stream</span> Datastream
+      </div>
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-on-surface tracking-tight">
+<span class="material-symbols-outlined text-primary text-[28px]">query_stats</span> FinMetrics
+      </div>
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-on-surface tracking-tight">
+<span class="material-symbols-outlined text-secondary text-[28px]">health_and_safety</span> HealthData
+      </div>
+<div class="flex items-center gap-2 font-headline-sm text-headline-sm text-on-surface tracking-tight">
+<span class="material-symbols-outlined text-primary text-[28px]">hub</span> ScaleSync
+      </div>
+</div>
+</section>
+<!-- SECTION 3: INTERACTIVE PRODUCT ARCHITECTURE & 5 CORE MODULES -->
+<section class="mb-gutter-xl">
+<div class="flex flex-col mb-gutter-lg">
+<span class="font-kicker text-kicker uppercase text-secondary">End-to-End Intelligence Pipeline</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight">
+        Autonomous Data Studio Engine Architecture
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mt-1">
+        DataPilot AI replaces fractured Python scripts, disjointed spreadsheets, and brittle SQL queries with a continuous, audited intelligence pipeline.
+      </p>
+</div>
+<!-- Modular Grid Layout -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter-lg">
+<!-- Module 1: Ingestion & Schema -->
+<div class="bg-surface-card rounded-2xl p-card-pad-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">database</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-subtle font-label-sm text-label-sm text-on-surface-variant font-mono">MOD-01</span>
+</div>
+<span class="font-kicker text-kicker uppercase text-secondary">Autonomous Ingestion</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Smart Ingestion &amp; Schema Detection</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Multi-protocol ingest supporting `.csv`, `.parquet`, Snowflake, Databricks, and BigQuery tables with zero manual mapping.
+          </p>
+<!-- Module Feature List -->
+<div class="mt-4 space-y-1.5 text-body-sm text-on-surface font-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>Sub-second polymorphic schema inferencing</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>Auto-detects UTC timestamps &amp; ISO geo-keys</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>Air-gapped on-prem warehouse tunneling</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-border-subtle/50 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">99.98% Parsing Reliability</span>
+<span class="material-symbols-outlined text-primary text-[20px]">arrow_forward</span>
+</div>
+</div>
+<!-- Module 2: AI Data Profiler -->
+<div class="bg-surface-card rounded-2xl p-card-pad-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">analytics</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-subtle font-label-sm text-label-sm text-on-surface-variant font-mono">MOD-02</span>
+</div>
+<span class="font-kicker text-kicker uppercase text-secondary">Diagnostics</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">AI Profiler &amp; Missingness Matrix</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Instant evaluation of statistical distribution, Shannon entropy, MCAR/MAR diagnostics, and multicollinearity matrices.
+          </p>
+<!-- Module Feature List -->
+<div class="mt-4 space-y-1.5 text-body-sm text-on-surface font-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>Visualized null-value correlation dendrograms</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>Skewness and kurtosis anomaly scores</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>Target variable distribution health check</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-border-subtle/50 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Instant Statistical Summaries</span>
+<span class="material-symbols-outlined text-primary text-[20px]">arrow_forward</span>
+</div>
+</div>
+<!-- Module 3: CleanBot Studio -->
+<div class="bg-surface-card rounded-2xl p-card-pad-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[26px]">auto_fix_high</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-subtle font-label-sm text-label-sm text-on-surface-variant font-mono">MOD-03</span>
+</div>
+<span class="font-kicker text-kicker uppercase text-secondary">Automated Cleansing</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">1-Click CleanBot Studio</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Production-ready transformation algorithms. Impute values with KNN regressor models and isolate noise via isolation forests.
+          </p>
+<div class="mt-4 space-y-1.5 text-body-sm text-on-surface font-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>Interquartile range &amp; Tukey outlier trimming</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>Fuzzy string normalization &amp; deduping</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>Reversible recipe generation (dbt / SQL)</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-border-subtle/50 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Audited Transformation Logic</span>
+<span class="material-symbols-outlined text-primary text-[20px]">arrow_forward</span>
+</div>
+</div>
+<!-- Module 4: Predictive EDA -->
+<div class="bg-surface-card rounded-2xl p-card-pad-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="w-12 h-12 rounded-xl bg-surface-container-low flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[26px]">insights</span>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-subtle font-label-sm text-label-sm text-on-surface-variant font-mono">MOD-04</span>
+</div>
+<span class="font-kicker text-kicker uppercase text-secondary">Hypothesis Generation</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mt-1">Predictive EDA &amp; Executive Insights</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-2 leading-relaxed">
+            Automatically surfaces high-impact drivers, survival probability curves, and regression analyses for leadership review.
+          </p>
+<div class="mt-4 space-y-1.5 text-body-sm text-on-surface font-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>SHAP feature importance ranking</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>Executive narrative summaries ready for decks</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-status-success text-[16px]">check_circle</span>
+<span>Interactive multi-dimensional segment cluster</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-border-subtle/50 flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">C-Suite Ready Reports</span>
+<span class="material-symbols-outlined text-primary text-[20px]">arrow_forward</span>
+</div>
+</div>
+<!-- Module 5: Grounded Gemini Copilot (Span 2 cols on desktop) -->
+<div class="bg-gradient-to-br from-surface-card to-surface-container-low md:col-span-2 rounded-2xl p-card-pad-md shadow-sm hover:shadow-md transition-shadow flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-xl bg-primary text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[26px]">auto_awesome</span>
+</div>
+<div>
+<span class="font-kicker text-kicker uppercase text-secondary">Conversational Synthesis</span>
+<h3 class="font-headline-md text-headline-md text-on-surface">Grounded Gemini 1.5 Pro Copilot</h3>
+</div>
+</div>
+<span class="px-2.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-label-sm font-bold">GEMINI ULTRA ENCLAVE</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl leading-relaxed">
+            Query your data lake using plain English. Gemini analyzes context, schemas, and relational constraints to return verifiable SQL, executable Jupyter notebooks, and mathematical reasoning without data hallucinations.
+          </p>
+<!-- Interactive Copilot Query Pills -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4">
+<div class="p-3 bg-surface-card rounded-xl shadow-xs hover:bg-surface-subtle transition-colors cursor-pointer flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">"Find churn rate by customer tenure &gt; 18 months"</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">terminal</span>
+</div>
+<div class="p-3 bg-surface-card rounded-xl shadow-xs hover:bg-surface-subtle transition-colors cursor-pointer flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface font-medium truncate">"Generate dbt incremental model with surrogate keys"</span>
+<span class="material-symbols-outlined text-secondary text-[18px]">code</span>
+</div>
+</div>
+</div>
+<div class="mt-6 pt-4 border-t border-border-subtle/50 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-status-success"></span>
+<span class="font-label-sm text-label-sm text-on-surface font-semibold">Zero-Retention Data Privacy Assured</span>
+</div>
+<button class="font-label-md text-label-md text-primary font-bold hover:underline flex items-center gap-1">
+            Test Gemini Copilot Live <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4: INTERACTIVE ROI / HOURS SAVED CALCULATOR -->
+<section class="bg-surface-card rounded-2xl p-gutter-lg lg:p-card-pad-lg mb-gutter-xl shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-xl items-center">
+<!-- Calculator Controls -->
+<div class="lg:col-span-6 flex flex-col text-left">
+<span class="font-kicker text-kicker uppercase text-secondary">Financial Impact Modeling</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mt-1">
+          Calculate Your Engineering ROI with DataPilot
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 mb-6">
+          Adjust your team parameters below to estimate monthly engineering hours saved and projected operational savings.
+        </p>
+<!-- Slider 1: Team Size -->
+<div class="mb-6">
+<div class="flex justify-between items-center mb-2">
+<label class="font-headline-sm text-headline-sm text-on-surface" for="teamSizeSlider">Data Scientists &amp; Analysts</label>
+<span class="font-code-metric text-headline-md text-primary font-bold" id="teamSizeValue">8 People</span>
+</div>
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary" id="teamSizeSlider" max="50" min="1" oninput="calculateROI()" type="range" value="8"/>
+<div class="flex justify-between text-label-sm text-on-surface-variant font-label-sm mt-1">
+<span>1 Analyst</span>
+<span>25 Analysts</span>
+<span>50+ Team</span>
+</div>
+</div>
+<!-- Slider 2: Datasets Processed -->
+<div class="mb-4">
+<div class="flex justify-between items-center mb-2">
+<label class="font-headline-sm text-headline-sm text-on-surface" for="datasetsSlider">Monthly Datasets Cleaned &amp; Explored</label>
+<span class="font-code-metric text-headline-md text-primary font-bold" id="datasetsValue">24 Datasets</span>
+</div>
+<input class="w-full h-2 bg-surface-container rounded-lg appearance-none cursor-pointer accent-primary" id="datasetsSlider" max="200" min="5" oninput="calculateROI()" type="range" value="24"/>
+<div class="flex justify-between text-label-sm text-on-surface-variant font-label-sm mt-1">
+<span>5 Tables</span>
+<span>100 Tables</span>
+<span>200+ Tables</span>
+</div>
+</div>
+</div>
+<!-- Live ROI Output Card -->
+<div class="lg:col-span-6 bg-gradient-to-tr from-surface-container-low via-surface-card to-surface-container-low rounded-2xl p-card-pad-md flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between border-b border-border-subtle/50 pb-4 mb-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary text-[24px]">savings</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">Projected Monthly Savings</span>
+</div>
+<span class="px-2 py-0.5 rounded bg-status-success/20 text-on-surface font-label-sm text-label-sm font-semibold">Instant Estimate</span>
+</div>
+<div class="grid grid-cols-2 gap-4 py-2">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Hours Saved / Month</span>
+<span class="font-code-metric text-display-lg text-primary mt-1" id="hoursSaved">192 hrs</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">~24 full work days freed</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Est. Cost Benefit</span>
+<span class="font-code-metric text-display-lg text-secondary mt-1" id="costSaved">$17,280</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Based on $90/hr avg rate</span>
+</div>
+</div>
+<!-- ROI Multiplier Callout -->
+<div class="bg-surface-card p-4 rounded-xl shadow-xs mt-4 flex items-center justify-between">
+<div>
+<div class="font-headline-sm text-headline-sm text-on-surface">Estimated ROI: <span class="text-status-success font-bold" id="roiMultiplier">11.6x</span></div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">Payback period under 14 business days</div>
+</div>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors cursor-pointer">
+            Get Custom Audit
+          </button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: ENTERPRISE TESTIMONIALS & CASE STUDIES -->
+<section class="mb-gutter-xl">
+<div class="flex flex-col text-left mb-gutter-lg">
+<span class="font-kicker text-kicker uppercase text-secondary">Peer Validated Excellence</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface">
+        Trusted by Modern Data Leaders
+      </h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter-lg">
+<!-- Testimonial 1 -->
+<div class="bg-surface-card rounded-2xl p-card-pad-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-status-warning mb-3">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+            "Before DataPilot, our analytics engineers spent 60% of their sprints fixing null anomalies and unstandardized categories. CleanBot handled in 10 minutes what took our team two days."
+          </p>
+</div>
+<div class="flex items-center gap-3 mt-6 pt-4 border-t border-border-subtle/50">
+<img class="w-10 h-10 rounded-full object-cover shadow-xs" data-alt="Corporate headshot of Marcus Brody, VP of Data at FinMetrics, smiling in a clean modern office with subtle blue accent lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCo7xDntHFUhcHtcjo8gK42m8DfJh2t4YvT--XsyRE0says3SmJfIzso5w_FmBkPLTB_deIGW7MBI0ZOWr_fDJsnlIGat-YfMyLo55NCiTv38_Ad-RKy7txbtK1dLP7yEyAqgyVwYqxAiKk9mr9_6oNjDejQM8RVsXGUDQ_L1ly1uSZQY9Dj2eSNECPqUFAVcu86jYk5VXFqSPhVTdy8rNc0rc5_PERDOJojEZLvcxxSvWSBlYojbrwZA"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Marcus Brody</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">VP of Data Analytics, FinMetrics</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="bg-surface-card rounded-2xl p-card-pad-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-status-warning mb-3">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+            "The Gemini-grounded SQL generator is uncanny. It handles 5-table Snowflake joins and builds verified window partitions with zero hallucinations. We cut time-to-insight by 75%."
+          </p>
+</div>
+<div class="flex items-center gap-3 mt-6 pt-4 border-t border-border-subtle/50">
+<img class="w-10 h-10 rounded-full object-cover shadow-xs" data-alt="Professional studio portrait of Dr. Aris Thorne, Chief Data Officer at HealthData, focused expression in a bright ambient setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDPGkoaX3bVT1jFBnjuAk6PmDbY3U4uzNYimb1vvd1ydkrOHBlJwKfd87ObrBykMgK_jydRsuZNvST6qC-dabVsFeZEPj53eDEVW2WMDT1ePp1hyvICTlTtf48yph2VdMn38ypFZogNP7WFzB-_UVsNQrzb0YJPtxUZuia1FGk6lBUqDAqWGiwocJqdGEbyh_jQ1fZXJJNChfDkkA-YY-IJyMnHwvINY-edBgvV9WpIYvmd19DaFe5aLg"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Dr. Aris Thorne</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Chief Data Officer, HealthData Corp</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="bg-surface-card rounded-2xl p-card-pad-md shadow-sm flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-1 text-status-warning mb-3">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span class="material-symbols-outlined text-[18px]">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface italic leading-relaxed">
+            "DataPilot delivered SOC2 compliance out of the box with on-prem execution. Our infosec team approved deployment within 48 hours. It's the gold standard for enterprise data teams."
+          </p>
+</div>
+<div class="flex items-center gap-3 mt-6 pt-4 border-t border-border-subtle/50">
+<img class="w-10 h-10 rounded-full object-cover shadow-xs" data-alt="Portrait photo of Samantha Wu, Principal Machine Learning Engineer at ScaleSync, wearing modern technical blazer in high-tech setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcLcSZQWizeIs_dXzCl0hCv-0oxGECDmX-53RbIP6Efawwojbw12T-WHZYAvV1RnyAVwLOa0xYIob8bRPDOFs3FF5UB96vYqXgUlITzpvU0hBWOzCMG14qJGlk8zLfoDMI9haIvP9RPKROei5Od_Ymv6mBMkKj9SbpFP6c5AtqG79S2L6CTsTS4WW5n4JoGcV_ImNnJ5EEq7if-NXKESprYXSuZ-AFxofXLh-qeGnENwW5V_dGVNUmpg"/>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface leading-tight">Samantha Wu</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Principal ML Engineer, ScaleSync</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 6: ENTERPRISE PRICING TIERS -->
+<section class="bg-surface-card rounded-2xl p-gutter-lg lg:p-card-pad-lg mb-gutter-xl shadow-sm">
+<div class="flex flex-col items-center text-center max-w-2xl mx-auto mb-gutter-xl">
+<span class="font-kicker text-kicker uppercase text-secondary">Predictable Transparent Pricing</span>
+<h2 class="font-headline-xl text-headline-xl text-on-surface tracking-tight mt-1">
+        Transparent Tiers for Growing Data Operations
+      </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">
+        Deploy DataPilot in minutes. Seamless scale from independent practitioners to global multi-tenant enterprise data lakes.
+      </p>
+</div>
+<!-- Tiers Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-md items-stretch">
+<!-- Tier 1: Starter -->
+<div class="bg-surface-subtle rounded-xl p-card-pad-sm flex flex-col justify-between shadow-xs">
+<div>
+<span class="font-kicker text-kicker uppercase text-on-surface-variant">Individual</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Starter</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">For single analysts automating personal ad-hoc workflows.</p>
+<div class="mt-4 mb-6">
+<span class="font-code-metric text-display-lg text-on-surface font-bold">$49</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ seat / month</span>
+</div>
+<div class="space-y-2 text-body-sm text-on-surface font-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>Up to 500k rows / file</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>CleanBot Basic Regressors</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>100 Gemini Copilot Queries</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>Standard CSV/Excel export</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-2.5 rounded-lg bg-surface-card text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer shadow-xs">
+          Start 14-Day Trial
+        </button>
+</div>
+<!-- Tier 2: Growth -->
+<div class="bg-surface-subtle rounded-xl p-card-pad-sm flex flex-col justify-between shadow-xs">
+<div>
+<span class="font-kicker text-kicker uppercase text-secondary">Teams</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Growth</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">For specialized teams accelerating weekly BI sprint cycles.</p>
+<div class="mt-4 mb-6">
+<span class="font-code-metric text-display-lg text-on-surface font-bold">$149</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ seat / month</span>
+</div>
+<div class="space-y-2 text-body-sm text-on-surface font-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>Up to 5M rows / file</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>Full CleanBot Algorithms</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>Snowflake &amp; BigQuery sync</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>1,500 Gemini Copilot Queries</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-2.5 rounded-lg bg-primary text-on-primary font-label-md text-label-md hover:bg-secondary transition-colors cursor-pointer shadow-xs">
+          Choose Growth
+        </button>
+</div>
+<!-- Tier 3: Pro (Featured) -->
+<div class="bg-primary rounded-xl p-card-pad-sm text-on-primary flex flex-col justify-between shadow-md relative overflow-hidden">
+<div class="absolute top-3 right-3 px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-bold">
+          MOST POPULAR
+        </div>
+<div>
+<span class="font-kicker text-kicker uppercase text-secondary-fixed tracking-wider">Enterprise Ready</span>
+<h3 class="font-headline-md text-headline-md text-on-primary mt-1">Pro Studio</h3>
+<p class="font-body-sm text-body-sm text-primary-fixed mt-1">For data organizations scaling predictive automation company-wide.</p>
+<div class="mt-4 mb-6">
+<span class="font-code-metric text-display-lg text-on-primary font-bold">$299</span>
+<span class="font-body-sm text-body-sm text-primary-fixed">/ seat / month</span>
+</div>
+<div class="space-y-2 text-body-sm text-on-primary font-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span>Unlimited row volume processing</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span>Automated dbt model generation</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span>Unlimited Gemini 1.5 Pro inference</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]">check_circle</span>
+<span>Priority 24/7 dedicated support</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-2.5 rounded-lg bg-on-primary text-primary font-headline-sm text-headline-sm hover:bg-surface-container-low transition-colors cursor-pointer shadow-sm">
+          Get Started with Pro
+        </button>
+</div>
+<!-- Tier 4: Enterprise Custom -->
+<div class="bg-surface-subtle rounded-xl p-card-pad-sm flex flex-col justify-between shadow-xs">
+<div>
+<span class="font-kicker text-kicker uppercase text-on-surface-variant">Dedicated</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-1">Enterprise Custom</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">For global compliance, on-prem VPC, and custom governance.</p>
+<div class="mt-4 mb-6">
+<span class="font-code-metric text-display-lg text-on-surface font-bold">Custom</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">annual billing</span>
+</div>
+<div class="space-y-2 text-body-sm text-on-surface font-label-md">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>Self-hosted VPC &amp; air-gapped clusters</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>Custom fine-tuned domain LLMs</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>SAML / Okta / Azure AD SSO</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">check</span>
+<span>Custom BAA &amp; Enterprise DPA</span>
+</div>
+</div>
+</div>
+<button class="w-full mt-6 py-2.5 rounded-lg bg-surface-card text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors cursor-pointer shadow-xs">
+          Contact Sales Team
+        </button>
+</div>
+</div>
+</section>
+<!-- SECTION 7: EXECUTIVE CTA BANNER -->
+<section class="bg-sidebar-bg rounded-2xl p-gutter-xl text-on-secondary relative overflow-hidden shadow-xl mb-gutter-xl">
+<div class="absolute -right-16 -bottom-16 w-80 h-80 bg-secondary opacity-30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-gutter-lg">
+<div class="flex flex-col text-left max-w-xl">
+<span class="font-kicker text-kicker uppercase text-secondary-fixed">Take Flight Today</span>
+<h2 class="font-headline-xl text-headline-xl text-on-secondary tracking-tight mt-1">
+          Eliminate Manual Data Wrangling Forever.
+        </h2>
+<p class="font-body-md text-body-md text-surface-container-highest mt-2">
+          Join over 12,000 data professionals who turn raw enterprise datasets into high-confidence production models in minutes.
+        </p>
+</div>
+<div class="flex flex-wrap items-center gap-gutter-md">
+<button class="px-6 py-3.5 rounded-xl bg-primary-container text-on-secondary font-headline-sm text-headline-sm hover:bg-secondary transition-all shadow-[0_4px_20px_rgba(59,130,246,0.3)] cursor-pointer">
+          Launch Free Workspace
+        </button>
+<button class="px-6 py-3.5 rounded-xl bg-surface-card/10 text-on-secondary hover:bg-surface-card/20 font-headline-sm text-headline-sm transition-all cursor-pointer">
+          Talk to an Architect
+        </button>
+</div>
+</div>
+</section>
+<!-- COMPLETE FOOTER -->
+<footer class="bg-surface-card rounded-2xl p-gutter-lg shadow-sm">
+<div class="grid grid-cols-2 md:grid-cols-5 gap-gutter-lg mb-gutter-lg">
+<!-- Brand column -->
+<div class="col-span-2 flex flex-col items-start">
+<div class="flex items-center gap-2 mb-3">
+<span class="material-symbols-outlined text-primary text-[28px]">auto_awesome</span>
+<span class="font-headline-sm text-headline-sm text-primary font-bold">DataPilot AI</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs leading-relaxed">
+          The sovereign enterprise platform for automated data quality, anomaly repair, and executive intelligence powered by Gemini 1.5 Pro.
+        </p>
+<div class="flex items-center gap-2 mt-4 px-3 py-1 rounded-full bg-surface-subtle font-label-sm text-label-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-status-success animate-ping"></span>
+<span>Global Systems Operational</span>
+</div>
+</div>
+<!-- Column 2: Platform -->
+<div class="flex flex-col gap-2">
+<span class="font-kicker text-kicker uppercase text-secondary">Platform</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Smart Ingestion</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Missingness Profiler</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">1-Click CleanBot</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Predictive EDA</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Gemini SQL Copilot</a>
+</div>
+<!-- Column 3: Resources -->
+<div class="flex flex-col gap-2">
+<span class="font-kicker text-kicker uppercase text-secondary">Resources</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Documentation</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">API Reference</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Python SDK</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Security Whitepaper</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">dbt Integration Guide</a>
+</div>
+<!-- Column 4: Company & Compliance -->
+<div class="flex flex-col gap-2">
+<span class="font-kicker text-kicker uppercase text-secondary">Governance</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">SOC2 Type II Audit</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">HIPAA Compliance</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Service</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Responsible AI Charter</a>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-gutter-md border-t border-border-subtle/50 flex flex-col sm:flex-row items-center justify-between text-body-sm text-on-surface-variant">
+<span>© 2025 DataPilot AI Technologies, Inc. All rights reserved.</span>
+<div class="flex items-center gap-4 mt-2 sm:mt-0 font-label-sm text-label-sm">
+<span>Region: US-East-1 (N. Virginia)</span>
+<span>•</span>
+<span>Version 4.2.1-prod</span>
+</div>
+</div>
+</footer>
+<!-- INLINE INTERACTION JAVASCRIPT -->
+<script>
+    function calculateROI() {
+      const teamSize = parseInt(document.getElementById('teamSizeSlider').value, 10);
+      const datasets = parseInt(document.getElementById('datasetsSlider').value, 10);
+
+      document.getElementById('teamSizeValue').innerText = teamSize + (teamSize === 1 ? ' Person' : ' People');
+      document.getElementById('datasetsValue').innerText = datasets + ' Datasets';
+
+      // Empirical heuristic: each dataset saves ~8 hours of cleansing & analysis per team member contribution
+      const hoursSaved = Math.round(teamSize * (datasets * 0.9) + (teamSize * 4));
+      const costSaved = hoursSaved * 90; // $90 blended hourly engineering rate
+      const softwareCost = teamSize * 149; // Growth rate reference
+      const roiRatio = softwareCost > 0 ? (costSaved / softwareCost).toFixed(1) : '10.0';
+
+      document.getElementById('hoursSaved').innerText = hoursSaved.toLocaleString() + ' hrs';
+      document.getElementById('costSaved').innerText = '$' + costSaved.toLocaleString();
+      document.getElementById('roiMultiplier').innerText = roiRatio + 'x';
+    }
+  </script>
+</div></main></div></body></html>
