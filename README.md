@@ -2,7 +2,6 @@
 
 An enterprise-grade data analytics platform that lets you upload datasets, automatically profile and understand them, and ask natural-language questions to an AI copilot. Built for privacy-first teams with dynamic PII masking, full data governance settings, and a polished Material Design 3 interface.
 
-![DataPilot AI](src/assets/hero.png)
 
 ---
 
