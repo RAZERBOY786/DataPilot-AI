@@ -1,6 +1,11 @@
 import jwt from 'jsonwebtoken'
+import crypto from 'node:crypto'
 
-const JWT_SECRET = process.env.JWT_SECRET || 'datapilot-dev-secret-key'
+// Never hard-code the signing key in source. Use the JWT_SECRET env variable,
+// or fall back to a random per-process secret so no published key can be used
+// to forge sessions.
+const JWT_SECRET =
+  process.env.JWT_SECRET || crypto.randomBytes(32).toString('hex')
 
 export function authenticate(req, res, next) {
   const header = req.headers.authorization
@@ -20,7 +25,7 @@ export function authenticate(req, res, next) {
 
 export function generateToken(user) {
   return jwt.sign(
-    { id: user.id, email: user.email, role: user.role },
+    { id: user.id, email: user.email, role: user.role, jti: crypto.randomUUID() },
     JWT_SECRET,
     { expiresIn: '7d' }
   )

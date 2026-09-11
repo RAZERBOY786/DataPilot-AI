@@ -10,6 +10,7 @@ const navItems = [
   { path: '/profiling', label: 'Data Profiling', icon: 'analytics' },
   { path: '/copilot', label: 'DataPilot AI', icon: 'auto_awesome' },
   { path: '/settings', label: 'Settings', icon: 'settings' },
+  { path: '/security', label: 'Security', icon: 'shield' },
 ]
 
 function SidebarContent({ onNavigate }) {

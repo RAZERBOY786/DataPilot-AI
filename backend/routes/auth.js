@@ -10,6 +10,9 @@ router.post('/register', (req, res) => {
   if (!email || !name || !password) {
     return res.status(400).json({ error: 'Email, name, and password are required' })
   }
+  if (String(password).length < 8) {
+    return res.status(400).json({ error: 'Password must be at least 8 characters' })
+  }
 
   const db = getDB()
   const existing = db.prepare('SELECT id FROM users WHERE email = ?').get(email)
